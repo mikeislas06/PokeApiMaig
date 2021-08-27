@@ -32,6 +32,7 @@ const fetchAPI = async (pokemon) => {
 
 const showPokemon = async (pokemonObject) => {
     pokeImage.setAttribute("src", pokemonObject.sprites.front_default);
+    pokeImage.setAttribute("alt", pokemonObject.name);
     pokeName.innerHTML = pokemonObject.name;
     pokeType.innerHTML = pokemonObject.types[0].type.name;
     pokeHeight.innerHTML = pokemonObject.height + "''";
