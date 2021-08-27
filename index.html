@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/pokedex.css" />
+        <link rel="shortcut icon" href="#" />
+
+        <!-- Fonts -->
+        <link
+            href="//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <title>PokeAPI MAIG</title>
+    </head>
+    <body>
+        <header>
+            <div class="container pokemon-search">
+                <form>
+                    <label for="pokemonNameInput">Pokemon: </label>
+                    <input
+                        type="text"
+                        name="pokemonNameInput"
+                        id="pokemonNameInput"
+                        placeholder="Choose a Pokemon"
+                    />
+                    <input id="goBtn" type="submit" value="GO!" />
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <div id="pokedex">
+                <div id="left">
+                    <div id="logo"></div>
+                    <div id="bg_curve1_left"></div>
+                    <div id="bg_curve2_left"></div>
+                    <div id="curve1_left">
+                        <div id="buttonGlass">
+                            <div id="reflect"></div>
+                        </div>
+                        <div id="miniButtonGlass1"></div>
+                        <div id="miniButtonGlass2"></div>
+                        <div id="miniButtonGlass3"></div>
+                    </div>
+                    <div id="curve2_left">
+                        <div id="junction">
+                            <div id="junction1"></div>
+                            <div id="junction2"></div>
+                        </div>
+                    </div>
+                    <div id="screen">
+                        <div id="topPicture">
+                            <div id="buttontopPicture1"></div>
+                            <div id="buttontopPicture2"></div>
+                        </div>
+                        <div id="picture">
+                            <img id="pokeImage" src="" alt="" height="170" />
+                        </div>
+                        <div id="buttonbottomPicture"></div>
+                        <div id="speakers">
+                            <div class="sp"></div>
+                            <div class="sp"></div>
+                            <div class="sp"></div>
+                            <div class="sp"></div>
+                        </div>
+                    </div>
+                    <div id="bigbluebutton"></div>
+                    <div id="barbutton1"></div>
+                    <div id="barbutton2"></div>
+                    <div id="cross">
+                        <div id="leftcross">
+                            <div id="leftT"></div>
+                        </div>
+                        <div id="topcross">
+                            <div id="upT"></div>
+                        </div>
+                        <div id="rightcross">
+                            <div id="rightT"></div>
+                        </div>
+                        <div id="midcross">
+                            <div id="midCircle"></div>
+                        </div>
+                        <div id="botcross">
+                            <div id="downT"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right">
+                    <div id="stats">
+                        <div class="row">
+                            <div class="col-6">
+                                <h6>Name: <span id="pokeName"></span></h6>
+                                <h6>Type: <span id="pokeType"></span></h6>
+                            </div>
+                            <div class="col-6">
+                                <h6>Height: <span id="pokeHeight"></span></h6>
+                                <h6>
+                                    Weight:
+                                    <span id="pokeWeight"></span>
+                                </h6>
+                            </div>
+                        </div>
+                        <h6 id="pokemonDescription"></h6>
+                    </div>
+                    <div id="blueButtons1">
+                        <div class="blueButton"></div>
+                        <div class="blueButton"></div>
+                        <div class="blueButton"></div>
+                        <div class="blueButton"></div>
+                        <div class="blueButton"></div>
+                    </div>
+                    <div id="blueButtons2">
+                        <div class="blueButton"></div>
+                        <div class="blueButton"></div>
+                        <div class="blueButton"></div>
+                        <div class="blueButton"></div>
+                        <div class="blueButton"></div>
+                    </div>
+                    <div id="miniButtonGlass4"></div>
+                    <div id="miniButtonGlass5"></div>
+                    <div id="barbutton3"></div>
+                    <div id="barbutton4"></div>
+                    <div id="yellowBox1"></div>
+                    <div id="yellowBox2"></div>
+                    <div id="bg_curve1_right"></div>
+                    <div id="bg_curve2_right"></div>
+                    <div id="curve1_right"></div>
+                    <div id="curve2_right"></div>
+                </div>
+            </div>
+        </main>
+
+        <script src="./assets/js/main.js"></script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
