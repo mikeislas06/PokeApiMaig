@@ -11,7 +11,8 @@ const goBtn = document.getElementById("goBtn");
 
 goBtn.onclick = (e) => {
     e.preventDefault();
-    fetchAPI(pokemonNameInput.value);
+
+    fetchAPI(pokemonNameInput.value.toLowerCase());
 };
 
 const fetchAPI = async (pokemon) => {
@@ -20,8 +21,12 @@ const fetchAPI = async (pokemon) => {
         const result = await resp.json();
         showPokemon(result);
     } catch (error) {
-        alert(error);
-        console.log(error);
+        if (
+            error ==
+            "SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data"
+        ) {
+            alert("Pokemon not found");
+        }
     }
 };
 
